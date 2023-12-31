@@ -10,7 +10,7 @@ import { FaGithub } from 'react-icons/fa'
 import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/active-section-context'
 
-
+ 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5)
   const {
@@ -104,8 +104,9 @@ export default function Intro() {
             hover:scale-110 active:scale-105 
             transition cursor-pointer 
             borderBlack dark:bg-white/10"
-          href="/jne-resume.pdf"
+          href={'/assets/jEliasonResume.pdf'}
           download
+          target='_blank'
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
